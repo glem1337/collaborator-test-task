@@ -1,15 +1,8 @@
 # Collaborator test task using TS, JS, Babel, Jest, Webpack
 
-## About showing errors by VS Code.
-
-Added empty dummy.ts.
-
-1. Close all open files
-2. Open dummy.ts
-3. Ctrl + Shift + P -> TypeScript: Restart TS Server
-4. Shown errors will be gone.
-
-Now I cannot explain this behaviour :/
+```bash
+nvm use && npm i
+```
 
 ## Run some command from list:
 
@@ -65,6 +58,18 @@ npm run lint
 
 ```bash
 npm run lint-fix
+```
+
+### Compare scss with rules of stylelint
+
+```bash
+npm run lint:scss
+```
+
+### Compare scss with rules of stylelint and then fix all errors
+
+```bash
+npm run lint:scss:fix
 ```
 
 ### Running all tests (see jest config)

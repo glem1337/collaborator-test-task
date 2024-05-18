@@ -17,13 +17,18 @@ export interface ITicketsApiParams {
   filters: FiltersValue[] | [];
 }
 
+// In this implementation, I handle sorting and filtering on the backend because
+// doing so on the frontend is impractical. Filtering on the frontend would only
+// apply to the current state data, and the list would change upon loading new
+// data. Additionally, in real-world projects, backend APIs usually manage
+// filtering, sorting, and pagination (e.g., JSON API). However, for this test
+// task, I decided to simulate this behavior.
 export const fetchTicketsAPI = async ({
   offset,
   limit,
   sort,
   filters,
 }: ITicketsApiParams): Promise<IFetchResult> => {
-  console.log('fetchTickets', offset, limit, sort, filters);
   return new Promise((resolve) => {
     setTimeout(() => {
       // Apply filters

@@ -13130,7 +13130,7 @@
     }, __webpack_require__.miniCssF = function(chunkId) {}, __webpack_require__.hmrF = function() {
         return "main." + __webpack_require__.h() + ".hot-update.json";
     }, __webpack_require__.h = function() {
-        return "2ed987b689b7272258ac";
+        return "dbc3eb34a16197bb7ac0";
     }, __webpack_require__.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {
@@ -13376,7 +13376,7 @@
             }, currentChildModule = void 0, hot), module.parents = currentParents, module.children = [], 
             currentParents = [], options.require = require;
         })), __webpack_require__.hmrC = {}, __webpack_require__.hmrI = {};
-    }(), __webpack_require__.p = "/", function() {
+    }(), __webpack_require__.p = "/collaborator-test-task/", function() {
         if ("undefined" != typeof document) {
             var createStylesheet = function(chunkId, fullhref, oldTag, resolve, reject) {
                 var linkTag = document.createElement("link");

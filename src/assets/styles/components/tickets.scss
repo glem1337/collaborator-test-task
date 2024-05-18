@@ -1,0 +1,69 @@
+@use 'sass:map';
+@import '../variables';
+@import '../mixins';
+
+.tickets {
+  flex: 1;
+  padding-bottom: 20px;
+
+  @include screen-md {
+    padding-bottom: 50px;
+    display: flex;
+  }
+}
+
+.tickets__filters {
+  width: 100%;
+  margin-bottom: 20px;
+
+  @include screen-md {
+    max-width: 232px;
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.tickets__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tickets__sort {
+  margin-bottom: 20px;
+}
+
+.tickets__preloading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px;
+}
+
+.tickets__item {
+  margin-bottom: 20px;
+}
+
+.tickets__load-more-btn {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  background-color: map.get($colors, accent);
+  color: map.get($colors, white);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: darken(map.get($colors, accent), 5%);
+  }
+
+  &:active {
+    background-color: darken(map.get($colors, accent), 8%);
+  }
+}

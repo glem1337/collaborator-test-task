@@ -1,0 +1,63 @@
+@use 'sass:map';
+@import '../variables';
+@import '../mixins';
+
+@include screen-md {
+  .sort {
+    display: flex;
+  }
+}
+
+.sort__button {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  flex: 1;
+  padding: 15px;
+  border: 1px solid map.get($colors, border);
+  background-color: map.get($colors, white);
+  cursor: pointer;
+
+  &:hover:not(.sort__button--selected) {
+    background-color: rgba(map.get($colors, accent), 0.2);
+  }
+
+  &:active:not(.sort__button--selected) {
+    background-color: rgba(map.get($colors, accent), 0.3);
+  }
+}
+
+.sort__button:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: none;
+
+  @include screen-md {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-right: none;
+    border-bottom: 1px solid map.get($colors, border);
+  }
+}
+
+.sort__button:last-child {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top: none;
+
+  @include screen-md {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 6px;
+    border-left: none;
+    border-top: 1px solid map.get($colors, border);
+  }
+}
+
+.sort__button--selected {
+  background-color: map.get($colors, accent);
+  border-color: map.get($colors, accent);
+  color: map.get($colors, white);
+}

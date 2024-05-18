@@ -1,0 +1,222 @@
+[
+  {
+    "id": "1",
+    "price": 13300,
+    "forward": {
+      "to": "DXB",
+      "from": "LHR",
+      "departure_time": "10:45",
+      "arrival_time": "08:00",
+      "travel_time": "34:15",
+      "layovers": ["HKG"]
+    },
+    "back": {
+      "to": "LHR",
+      "from": "DXB",
+      "departure_time": "11:20",
+      "arrival_time": "00:50",
+      "travel_time": "16:30",
+      "layovers": ["HKG"]
+    }
+  },
+  {
+    "id": "2",
+    "price": 8500,
+    "forward": {
+      "to": "LAX",
+      "from": "JFK",
+      "departure_time": "06:00",
+      "arrival_time": "09:30",
+      "travel_time": "06:30",
+      "layovers": ["ORD"]
+    },
+    "back": {
+      "to": "JFK",
+      "from": "LAX",
+      "departure_time": "10:00",
+      "arrival_time": "16:30",
+      "travel_time": "06:30",
+      "layovers": ["ORD"]
+    }
+  },
+  {
+    "id": "3",
+    "price": 9500,
+    "forward": {
+      "to": "CDG",
+      "from": "SFO",
+      "departure_time": "14:20",
+      "arrival_time": "10:50",
+      "travel_time": "16:30",
+      "layovers": ["LHR"]
+    },
+    "back": {
+      "to": "SFO",
+      "from": "CDG",
+      "departure_time": "12:00",
+      "arrival_time": "18:30",
+      "travel_time": "16:30",
+      "layovers": ["LHR"]
+    }
+  },
+  {
+    "id": "4",
+    "price": 7200,
+    "forward": {
+      "to": "NRT",
+      "from": "SYD",
+      "departure_time": "12:00",
+      "arrival_time": "19:00",
+      "travel_time": "09:00",
+      "layovers": ["HKG"]
+    },
+    "back": {
+      "to": "SYD",
+      "from": "NRT",
+      "departure_time": "10:00",
+      "arrival_time": "18:00",
+      "travel_time": "08:00",
+      "layovers": ["HKG"]
+    }
+  },
+  {
+    "id": "5",
+    "price": 12300,
+    "forward": {
+      "to": "SFO",
+      "from": "DXB",
+      "departure_time": "23:00",
+      "arrival_time": "08:00",
+      "travel_time": "22:00",
+      "layovers": ["AMS", "JFK"]
+    },
+    "back": {
+      "to": "DXB",
+      "from": "SFO",
+      "departure_time": "15:00",
+      "arrival_time": "11:00",
+      "travel_time": "20:00",
+      "layovers": ["AMS", "JFK"]
+    }
+  },
+  {
+    "id": "6",
+    "price": 6700,
+    "forward": {
+      "to": "ICN",
+      "from": "HND",
+      "departure_time": "09:30",
+      "arrival_time": "11:50",
+      "travel_time": "03:00",
+      "layovers": ["BRU", "FRA"]
+    },
+    "back": {
+      "to": "HND",
+      "from": "ICN",
+      "departure_time": "13:00",
+      "arrival_time": "15:20",
+      "travel_time": "03:00",
+      "layovers": ["BRU", "FRA"]
+    }
+  },
+  {
+    "id": "7",
+    "price": 8900,
+    "forward": {
+      "to": "JFK",
+      "from": "LHR",
+      "departure_time": "16:00",
+      "arrival_time": "19:00",
+      "travel_time": "08:00",
+      "layovers": []
+    },
+    "back": {
+      "to": "LHR",
+      "from": "JFK",
+      "departure_time": "10:00",
+      "arrival_time": "22:00",
+      "travel_time": "08:00",
+      "layovers": []
+    }
+  },
+  {
+    "id": "8",
+    "price": 10100,
+    "forward": {
+      "to": "LAX",
+      "from": "YYZ",
+      "departure_time": "13:00",
+      "arrival_time": "15:30",
+      "travel_time": "05:30",
+      "layovers": ["DEN"]
+    },
+    "back": {
+      "to": "YYZ",
+      "from": "LAX",
+      "departure_time": "17:00",
+      "arrival_time": "23:30",
+      "travel_time": "05:30",
+      "layovers": ["DEN"]
+    }
+  },
+  {
+    "id": "9",
+    "price": 7400,
+    "forward": {
+      "to": "EZE",
+      "from": "GRU",
+      "departure_time": "08:30",
+      "arrival_time": "11:00",
+      "travel_time": "03:30",
+      "layovers": []
+    },
+    "back": {
+      "to": "GRU",
+      "from": "EZE",
+      "departure_time": "14:00",
+      "arrival_time": "16:30",
+      "travel_time": "03:30",
+      "layovers": []
+    }
+  },
+  {
+    "id": "10",
+    "price": 13200,
+    "forward": {
+      "to": "DXB",
+      "from": "SIN",
+      "departure_time": "22:00",
+      "arrival_time": "03:00",
+      "travel_time": "07:00",
+      "layovers": ["BOM", "DEL", "GRU"]
+    },
+    "back": {
+      "to": "SIN",
+      "from": "DXB",
+      "departure_time": "20:00",
+      "arrival_time": "05:00",
+      "travel_time": "09:00",
+      "layovers": ["BOM", "DEL", "GRU"]
+    }
+  },
+  {
+    "id": "11",
+    "price": 14000,
+    "forward": {
+      "to": "AMS",
+      "from": "LHR",
+      "departure_time": "08:00",
+      "arrival_time": "11:00",
+      "travel_time": "03:00",
+      "layovers": []
+    },
+    "back": {
+      "to": "LHR",
+      "from": "AMS",
+      "departure_time": "14:00",
+      "arrival_time": "17:00",
+      "travel_time": "03:00",
+      "layovers": []
+    }
+  }
+]

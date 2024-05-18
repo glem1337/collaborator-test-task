@@ -1,0 +1,26 @@
+.logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+
+  &:hover {
+    .logo__shadow {
+      opacity: 1;
+    }
+  }
+}
+
+.logo__shadow {
+  opacity: 0;
+  position: absolute;
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  margin-top: -8px;
+  border-radius: 50%;
+  box-shadow: 0 1px 11px rgb(55 104 142 / 100%);
+  transition: opacity .2s ease;
+}

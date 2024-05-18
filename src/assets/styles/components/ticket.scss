@@ -1,0 +1,77 @@
+@use 'sass:map';
+@import '../variables';
+@import '../mixins';
+
+.ticket {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: map.get($colors, white);
+
+  @include card-shadow;
+}
+
+.ticket__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.ticket__price {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  color: map.get($colors, accent);
+}
+
+.ticket__logo {
+  margin-top: -10px;
+}
+
+.ticket__row {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid map.get($colors, border);
+  }
+
+  @include screen-sm {
+    display: flex;
+
+    &:not(:last-child) {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+}
+
+.ticket__cell {
+  flex: 1;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @include screen-sm {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.ticket__cell-title {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: map.get($colors, light-grey);
+}
+
+.ticket__cell-value {
+  font-size: 14px;
+  line-height: 21px;
+}

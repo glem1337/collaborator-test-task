@@ -1,0 +1,20 @@
+@mixin card-shadow() {
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
+  transition: box-shadow .2s ease-out;
+
+  &:hover {
+    box-shadow: 0 2px 8px 2px rgb(0 0 0 / 10%);
+  }
+}
+
+@mixin screen-sm() {
+  @media (width >= 375px) {
+    @content;
+  }
+}
+
+@mixin screen-md() {
+  @media (width >= 768px) {
+    @content;
+  }
+}

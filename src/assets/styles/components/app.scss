@@ -1,0 +1,41 @@
+@use "sass:map";
+@import "../variables";
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("OpenSans"),
+  url("@/assets/fonts/OpenSans.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  color: map.get($colors, dark-grey);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: map.get($colors, background);
+}
+
+.app__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}

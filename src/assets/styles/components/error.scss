@@ -1,0 +1,9 @@
+@use 'sass:map';
+@import '../variables';
+
+.error {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: map.get($colors, error);
+  color: map.get($colors, white);
+}

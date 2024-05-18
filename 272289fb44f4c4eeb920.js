@@ -4767,15 +4767,17 @@
                 }() : function() {
                     useInRouterContext() || router_invariant(!1);
                     let dataRouterContext = react.useContext(DataRouterContext), {basename: basename, future: future, navigator: navigator} = react.useContext(NavigationContext), {matches: matches} = react.useContext(RouteContext), {pathname: locationPathname} = useLocation(), routePathnamesJson = JSON.stringify(getResolveToMatches(matches, future.v7_relativeSplatPath)), activeRef = react.useRef(!1);
-                    return dist_useIsomorphicLayoutEffect((() => {
+                    dist_useIsomorphicLayoutEffect((() => {
                         activeRef.current = !0;
-                    })), react.useCallback((function(to, options) {
+                    }));
+                    let navigate = react.useCallback((function(to, options) {
                         if (void 0 === options && (options = {}), !activeRef.current) return;
                         if ("number" == typeof to) return void navigator.go(to);
                         let path = resolveTo(to, JSON.parse(routePathnamesJson), locationPathname, "path" === options.relative);
                         null == dataRouterContext && "/" !== basename && (path.pathname = "/" === path.pathname ? basename : joinPaths([ basename, path.pathname ])), 
                         (options.replace ? navigator.replace : navigator.push)(path, options.state, options);
                     }), [ basename, navigator, routePathnamesJson, locationPathname, dataRouterContext ]);
+                    return navigate;
                 }();
             }
             function useResolvedPath(to, _temp2) {
@@ -5645,6 +5647,7 @@
             }
             function App() {
                 return (0, jsx_runtime.jsx)(BrowserRouter, {
+                    basename: "/collaborator-test-task",
                     children: (0, jsx_runtime.jsxs)("div", {
                         className: "app",
                         children: [ (0, jsx_runtime.jsx)(layout_Header, {}), (0, jsx_runtime.jsx)("main", {
@@ -13130,7 +13133,7 @@
     }, __webpack_require__.miniCssF = function(chunkId) {}, __webpack_require__.hmrF = function() {
         return "main." + __webpack_require__.h() + ".hot-update.json";
     }, __webpack_require__.h = function() {
-        return "8ab707f792e508c8ed8b";
+        return "272289fb44f4c4eeb920";
     }, __webpack_require__.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {

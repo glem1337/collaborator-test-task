@@ -5640,7 +5640,7 @@
                         path: ROUTES.HOME,
                         element: (0, jsx_runtime.jsx)(pages_Home, {})
                     }), (0, jsx_runtime.jsx)(Route, {
-                        path: "*",
+                        path: "/*",
                         element: (0, jsx_runtime.jsx)(pages_Page404, {})
                     }) ]
                 });
@@ -13133,7 +13133,7 @@
     }, __webpack_require__.miniCssF = function(chunkId) {}, __webpack_require__.hmrF = function() {
         return "main." + __webpack_require__.h() + ".hot-update.json";
     }, __webpack_require__.h = function() {
-        return "e85fe04cf9d1e197de80";
+        return "ac8c394b7650c3122bb6";
     }, __webpack_require__.g = function() {
         if ("object" == typeof globalThis) return globalThis;
         try {

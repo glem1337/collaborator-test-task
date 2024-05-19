@@ -1,13 +1,13 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import Index from '@/layout/Header';
+import Header from '@/layout/Header';
 import AppRoutes from '@/routes/routes';
 
 export default function App() {
   return (
     <Router>
       <div className="app">
-        <Index />
+        <Header />
 
         <main className="app__content container">
           <AppRoutes />

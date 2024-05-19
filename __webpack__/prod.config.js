@@ -1,8 +1,10 @@
+const path = require('path');
 const { merge } = require('webpack-merge');
 const common = require('./common.config.js');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const plugins = [
   new MiniCssExtractPlugin({
@@ -41,6 +43,12 @@ const plugins = [
       },
     },
   }),
+
+  new CopyWebpackPlugin({
+    patterns: [
+      { from: path.resolve(__dirname, '../public/_redirects'), to: path.resolve(__dirname, '../build') }
+    ],
+  }),
 ];
 
 module.exports = merge(common, {
@@ -50,6 +58,7 @@ module.exports = merge(common, {
   devtool: false,
   output: {
     filename: '[fullhash].js',
+    publicPath: '/collaborator-test-task/',
   },
   optimization: {
     usedExports: false,

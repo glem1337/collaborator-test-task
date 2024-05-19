@@ -33,6 +33,7 @@ export const fetchTicketsAPI = async ({
     setTimeout(() => {
       // Apply filters
       let filteredTickets = data;
+      // We can return no data if there are no filters, but I would prefer to return all data.
       if (filters.length > 0) {
         filteredTickets = filteredTickets.filter((ticket) =>
           filters.some((filter) => filterFunc[filter](ticket)),
